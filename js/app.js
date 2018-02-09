@@ -128,7 +128,7 @@ function initMap() {
             image: image,
             url: url,
             animation: google.maps.Animation.DROP,
-            icon: 'goggle_marker.png',
+            icon: 'ressen1012.github.io/goggle_marker.png',
             id: i
         });
         //push the newly marker into markers array
