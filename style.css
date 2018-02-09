@@ -1,0 +1,147 @@
+ html,
+      body, #map {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+h1 {
+	margin-top: 5px;
+	margin-left: 3px;
+}
+
+h3 {
+	margin-top: 8px;
+	color: #212121;
+	font-size: 16px;
+	font-family: 'Roboto',arial,sans-serif;
+	text-align: center;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+a:active {
+    color: blue;
+}
+
+hr {
+	height: 1px;
+	color: #123455;
+	background-color: #123455;
+	border: none;
+}
+
+.display-buttons {
+	z-index: 4;
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 2px;
+}
+
+.search-area {
+	position: absolute;
+	margin-top: 0px;
+	background-color: #e8cbb1e6;
+	z-index: 3;
+}
+
+#show-locations, #hide-locations {
+	background-color: #fff4a2;
+	border: 1px solid #999;
+	border-radius: 3px;
+	width: 75px;
+	height: 0px;
+	line-height: 35px;
+	padding: 10px 10px 30px 10px;
+	text-align: left;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	z-index: 4;
+}
+
+.input-box { 
+	margin-bottom: 15px;
+	margin-left: 3px;
+	height: 25px;
+	width: 280px;
+}
+
+.search-list { 
+	padding: 45px 10px 30px 5px;
+	position: absolute;
+	z-index: 3;
+}
+
+#open-weather {
+	z-index: 2;
+	width: 100%;
+	position: absolute;
+}
+
+.weather-data {
+	position: absolute;
+	top: 0;
+	right: 0;
+	vertical-align: top;
+	font-family: 'Roboto',arial,sans-serif;
+	background-color: #efefef;
+	z-index: 100;
+}
+
+.weather-data li {
+    display: inline-block;
+    margin: 0 12px;
+    padding: 0;
+    font-size: medium;
+    font-weight: lighter !important; 
+    text-align: center;
+    color: #7b7a7a;
+}
+
+
+#locations {
+	max-height: 720px;
+	max-width: 280px;
+	padding: 1px 10px 30px 20px;
+	font-weight: normal;
+	overflow: scroll;
+	background-color: #ece3dae6;
+	margin-top: 100px;
+}
+
+#locations-list {
+	padding: 5px 10px 5px 2px;
+	cursor: pointer;
+	list-style-type:none;
+	height: 50%;
+	line-height: 1.8;
+	font-weight: 5;
+	font-weight: bold;
+}
+
+.location-name {
+	list-style-type: disc;
+	background-color: #FFA07A;
+}
+
+#locations-list li:hover {
+	background-color: #162f5de6;
+	color: white;
+}
+
+.weather-box {
+	max-height: 100px;
+	max-width: 80px;
+	display:block;
+    z-index: 3;
+    margin-left: 900px;
+}
