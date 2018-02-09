@@ -128,7 +128,7 @@ function initMap() {
             image: image,
             url: url,
             animation: google.maps.Animation.DROP,
-            icon: 'img/goggle_marker.png',
+            icon: 'goggle_marker.png',
             id: i
         });
         //push the newly marker into markers array
