@@ -269,7 +269,7 @@ function initMap() {
             url: url,
             image: image,
             animation: google.maps.Animation.DROP,
-            icon: 'img/goggle_marker.png',
+            icon: 'goggle_marker.png',
             id: venueId
         });
         //push the newly created marker into markers array
@@ -305,7 +305,7 @@ function initMap() {
                 '<br><img src="' + marker.image + '"><br>' +
                 '<strong>' + (marker.users).toLocaleString('en') + '</strong>' + ' Foursquare users ' + 'checked-in here ' + '<br>' + '<strong>' + (marker.checkIns).toLocaleString('en') + '</strong>' + ' times. It is been rated ' +
                 '<strong>' + (marker.rating * 10) + '%!' + '</strong>' +
-                '<br> <img src='img/Foursquare-attr.png'>' +
+                '<br> <img src='Foursquare-attr.png'>' +
                 '<br>' + marker.street +
                 '<br>' + address +
                 '<br>' + marker.phone +
