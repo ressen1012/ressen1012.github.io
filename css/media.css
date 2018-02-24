@@ -1,5 +1,38 @@
-@media screen and (max-width: 720px) {
-	.search-list {
-		display: none;
-	}
+@media screen and (max-width: 600px) {
+    .search-list {
+        height: 1200px;
+        width: 160px;
+    }
+
+    #locations {
+        width: 160px;
+        padding: 1px 10px 20px 21px;
+    }
+
+    #locations-list {
+        width: 160px;
+        height: 30%;
+        line-height: 1.0;
+        font-size: 0.8em;
+    }
+
+    .search-area, .input-box {
+        width: 180px;
+        padding: 3px 10px 7px 1px;
+    }
+
+    h3 {
+        font-size: 1.0em;
+    }
+
+    .nav-bar-button {
+        position: absolute;
+        left: 210px;
+        padding: 1px 20px 15px 45px;
+        color: #2a457a;
+    }
+
+    nav {
+        width: 210px;
+    };
 }
