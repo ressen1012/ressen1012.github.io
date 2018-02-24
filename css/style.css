@@ -1,135 +1,115 @@
- html,
-body {
-  font-family: 'Bad Script', cursive;
-  height: 100%;
-  margin: 0;
-  font-size: 14px;
+html,
+ body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', cursive;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.container {
-  height: 100%;
-  position: relative;
-}
-
-.topbar {
-height: 50px;
-background-color: #fac96e;
-text-align: center;
-font-size: 27px;
-font-weight: bold;
-}
-
-input {
-  font-size: 12px;
-  width: 200px;
-  height: 30px;
+.app-container {
+    height: 100%;
+    position: relative;
 }
 
 #map {
-  width: 100%;
-  height: calc(100% - 50px);
+    width: 100%;
+    height: 100%;
 }
 
-#iw_container{
-  font-family: 'Armata', sans-serif;
+a:visited {
+    color: red;
 }
 
-.placelist {
-  list-style-type: none;
-  text-align: center;  
-  font-weight: bold;
-  font-size: 18px;
-  border: solid #db9726;
-  border-radius: 8px;
+a:hover {
+    color: hotpink;
 }
 
-.placelist:hover {
-  background-color: #fbd897;
-  cursor: pointer;
+a:active {
+    color: blue;
 }
 
-ul{
-  margin-top: 20px;
-  padding-left: 0;
+hr.place-end {
+    height: 1px;
+    color: #5E5353;
 }
 
 nav {
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  bottom: 0;
-  width: 250px;
-  background-color: #f8b230;
-  transform: translate3d(-250px, 0, 0);
-  transition: transform 0.4s ease;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    width: 275px;
+    background-color: #2A457A;
+    transform: translate3d(-250px, 0, 0);
+    transition: transform 0.4s ease;
 }
 
-.active-nav nav {
-  transform: translate3d(0, 0, 0);
+.nav-open nav {
+    transform: translate3d(0, 0, 0);
 }
 
-.nav-toggle-btn {
-  display: block;
-  position: absolute;
-  left: 250px;
-  padding: 10px 20px 15px 15px;
-  color: white;
-  cursor: pointer;
+.nav-bar-button {
+    display: block;
+    position: absolute;
+    left: 250px;
+    padding: 1px 20px 15px 30px;
+    color: #2a457a;
+    cursor: pointer;
 }
 
-#form-container {
-  padding-top: 10px;
-  padding-left: 20px;
+.display-buttons {
+    z-index: 4;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 2px;
 }
 
-label {
-  font-size: 25px;
-  font-weight: bold;
+.search-area {
+    position: absolute;
+    width: 235px;
+    padding: 5px 1px 0px 10px;
+    margin-top: 0px;
+    background-color: #E8CBB1;
+    z-index: 3;
 }
 
-@media screen and (max-width: 768px){ 
-  .topbar {
-  height: 70px;
-  background-color: #fac96e;
-  font-size: 30px;
+.input-box {
+    margin-bottom: 20px;
+    margin-left: 3px;
+    height: 25px;
+    width: 203px;
 }
 
-.placelist {
-  list-style-type: none;
-  text-align: center;  
-  font-weight: bold;
-  font-size: 20px;
-  border: solid #db9726;
-  border-radius: 8px;
+.search-list {
+    padding: 45px 10px 30px 5px;
+    position: absolute;
+    z-index: 3;
 }
 
-.nav-toggle-btn {
-  position: absolute;
-  left: 250px;
-  padding: 20px 20px 20px 20px;
-  color: white;
-}
-}
-
-@media screen and (max-width: 320px) {
-.topbar {
-  height: 50px;
-  background-color: #fac96e;
-  font-size: 18px;
+#locations {
+    max-height: 944px;
+    max-width: 207px;
+    padding: 1px 31px 20px 20px;
+    overflow: scroll;
+    background-color: #ECE3DA;
+    margin-top: 100px;
 }
 
-.placelist {
-  list-style-type: none;
-  text-align: center;  
-  font-weight: bold;
-  font-size: 16px;
-  border: solid #db9726;
-  border-radius: 8px;
+#locations-list {
+    padding: 10px 10px 5px 10px;
+    cursor: pointer;
+    list-style-type: none;
+    height: 50%;
+    line-height: 1.4;
 }
 
-label {
-  font-size: 25px;
-  font-weight: bold;
+.location-name {
+    list-style-type: disc;
+    background-color: #FFA07A;
 }
 
+#locations-list li:hover {
+    background-color: #2a457a;
+    color: white;
 }
